@@ -22,27 +22,32 @@ Two searching algorithms are implemented:
 Products are stored in an array of `Product` objects.
 
 ###  Sample Input:
-Enter product name to search: Mobile
+## Enter product name to search: Mobile
 ### Sample Output:
-Linear Search: 4 - Mobile - Electronics
-Binary Search: 4 - Mobile - Electronics
+## Linear Search: 4 - Mobile - Electronics
+## Binary Search: 4 - Mobile - Electronics
 
 ### Time Complexity Comparison
 
-| Algorithm       | Best Case | Worst Case |
-|-----------------|-----------|------------|
-| Linear Search   | O(1)      | O(n)       |
-| Binary Search   | O(1)      | O(log n)   |
+The following table and explanation are based on the actual code implementation:
 
-- **Linear Search** checks each item one by one and is simple to implement.
-- **Binary Search** is much faster but only works on **sorted data**.
+| Operation                  | Time Complexity              | Explanation                                                                 |
+|---------------------------|------------------------------|-----------------------------------------------------------------------------|
+| **Linear Search**         | Best: O(1) <br> Worst: O(n)   | Loops through each product using a `for` loop. Efficient if match is early. |
+| **Binary Search**         | Best: O(1) <br> Worst: O(log n) | Uses a `while` loop with mid-point logic, reducing search space by half.   |
+| **Sorting (for Binary)**  | O(n log n)                    | Uses `Arrays.sort()` (TimSort), which is needed before performing binary search. |
+
+### Explanation
+
+- The **linear search** function uses a basic `for-each` loop to compare each product name. It's straightforward but takes longer as the number of products increases.
+- The **binary search** function works only after sorting. It uses a `while` loop with a mid-point check, which makes it faster for large, sorted arrays.
+- The call to `Arrays.sort()` before binary search adds a one-time cost of **O(n log n)** to prepare the data.
+
+---
 
 ### Conclusion
 
-For small datasets, linear search is acceptable.  
-But for a real-world e-commerce platform where thousands of products exist, **binary search is more suitable** due to its **logarithmic time complexity**, which scales much better.
-
-**Binary search is preferred** when performance is important and the product list is sorted in advance.
-
-
+- 🔹 We use **Linear Search** for small or unsorted product lists.
+- 🔹 We use **Binary Search** for large, sorted product lists — it's significantly faster.
+- For performance-focused platforms, **Binary Search is the preferred approach** once the array is sorted.
 
