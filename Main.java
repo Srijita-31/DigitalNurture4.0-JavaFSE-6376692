@@ -26,7 +26,7 @@ public class Main {
         return null;
     }
 
-    // Sort for Binary Search
+    
     public static void sortByName(Product[] products) {
         Arrays.sort(products, (a, b) -> a.name.compareToIgnoreCase(b.name));
     }
@@ -47,7 +47,7 @@ public class Main {
         Product foundLinear = linearSearch(products, name);
         System.out.println("Linear Search: " + (foundLinear != null ? foundLinear : "Not found"));
 
-        sortByName(products);  // Binary search needs sorted array
+        sortByName(products);  
 
         Product foundBinary = binarySearch(products, name);
         System.out.println("Binary Search: " + (foundBinary != null ? foundBinary : "Not found"));
