@@ -18,7 +18,7 @@ public class FinancialForecast {
             
             do {
                 try {
-                    // Get user input
+                    /
                     System.out.print("\nEnter the present value (Rs.): ");
                     double presentValue = scanner.nextDouble();
                     
@@ -29,19 +29,19 @@ public class FinancialForecast {
                     System.out.print("Enter the number of years: ");
                     int years = scanner.nextInt();
                     
-                    // Calculate and show future value
+                    /
                     double futureValue = predictFutureValue(presentValue, growthRate, years);
                     System.out.printf("Future value after %d years: Rs%.2f\n", years, futureValue);
                     
-                    // Ask user if they want to continue
+                    
                     System.out.print("\nDo you want to calculate again? (yes/no): ");
-                    scanner.nextLine(); // consume newline
+                    scanner.nextLine(); 
                     choice = scanner.nextLine().trim().toLowerCase();
                     
                 } catch (Exception e) {
                     System.out.println("Invalid input. Please enter numbers only.");
-                    scanner.nextLine(); // clear buffer
-                    choice = "yes"; // repeat
+                    scanner.nextLine(); 
+                    choice = "yes"; 
                 }
                 
             } while (choice.equals("yes") || choice.equals("y"));
