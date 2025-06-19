@@ -5,7 +5,7 @@ You are developing a document management system that needs to create different t
 This project demonstrates how to implement the Factory Method Pattern in Java using user input to dynamically decide which document type to create. It includes interfaces, abstract classes, concrete classes, and a test class to execute the functionality.
 
 Folder Structure:
-
+```
 FactoryMethodPatternExample/
 ├── Code/
 │   ├── src/
@@ -20,6 +20,8 @@ FactoryMethodPatternExample/
 │   │   └── Main.java
 │   └── Output/
 └── README.md
+```
+
 
 All document types implement a common interface called `Document` that contains an `open()` method. There are three concrete implementations: `WordDocument`, `PdfDocument`, and `ExcelDocument`. The creation logic is encapsulated in a factory hierarchy: an abstract `DocumentFactory` and concrete factories like `WordFactory`, `PdfFactory`, and `ExcelFactory`.
 
