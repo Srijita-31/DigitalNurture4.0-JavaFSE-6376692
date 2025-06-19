@@ -11,14 +11,14 @@ Week 1/
 ├── Design Patterns and Principles/
 │   ├── SingletonPatternExample/
 │   ├── FactoryMethodPatternExample/
-│   └── BuilderPatternExample/
+│   
 └── Data Structure and Algorithm/
     ├── E-Commerce Search Function/
     └── Financial Forecasting/
 ```
 
 
-## 🛠 Technologies Used
+##  Technologies Used
 - Java
 - VS Code
 - Git & GitHub
