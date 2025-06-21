@@ -1,6 +1,6 @@
 # Week 1 – Java Design Patterns and Principles & Data Structures and Algorithms
 
-This folder contains all mandatory hands-on exercises completed during **Week 1** of the Digital Nurture 4.0 Java FSE program. 
+This folder contains all the mandatory hands-on exercises completed during **Week 1** of the Digital Nurture 4.0 Java FSE program. 
 
 ---
 
