@@ -1,6 +1,6 @@
 # Factory Method Pattern – Document Management System
 
-You are developing a document management system that needs to create different types of documents (e.g., Word, PDF, Excel) using the Factory Method Design Pattern to achieve this. The user will input the document type at runtime, and the corresponding document will be created and opened.
+We are developing a document management system that needs to create different types of documents (e.g., Word, PDF, Excel) using the Factory Method Design Pattern to achieve this. The user will input the document type at runtime, and the corresponding document will be created and opened.
 
 This project demonstrates how to implement the Factory Method Pattern in Java using user input to dynamically decide which document type to create. It includes interfaces, abstract classes, concrete classes, and a test class to execute the functionality.
 
