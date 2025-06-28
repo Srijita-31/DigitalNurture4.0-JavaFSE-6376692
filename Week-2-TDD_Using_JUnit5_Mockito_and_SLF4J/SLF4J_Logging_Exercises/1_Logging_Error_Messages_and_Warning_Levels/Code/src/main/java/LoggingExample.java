@@ -5,8 +5,7 @@ import org.slf4j.LoggerFactory;
 public class LoggingExample {
 
     // Obtaining a logger instance for this class
-    // The LoggerFactory is used to get a Logger specific to this class,
-    // which helps in identifying the source of log messages.
+    // The LoggerFactory is used to get a Logger specific to this class, which helps in identifying the source of log messages.
     private static final Logger logger = LoggerFactory.getLogger(LoggingExample.class);
 
     public static void main(String[] args) {
