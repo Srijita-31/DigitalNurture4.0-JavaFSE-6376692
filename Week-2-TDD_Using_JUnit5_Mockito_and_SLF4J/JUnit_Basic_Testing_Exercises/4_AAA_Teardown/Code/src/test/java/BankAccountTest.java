@@ -36,7 +36,7 @@ public class BankAccountTest {
         System.out.println("testWithdraw: Withdrew " + withdrawAmount + ", new balance: " + account.getBalance());
     }
 
-    @Test(expected = IllegalArgumentException.class) // <--- CHANGE THIS LINE
+    @Test(expected = IllegalArgumentException.class) 
     public void testWithdrawInsufficientFunds() {
         double withdrawAmount = 200.0;
         account.withdraw(withdrawAmount);
