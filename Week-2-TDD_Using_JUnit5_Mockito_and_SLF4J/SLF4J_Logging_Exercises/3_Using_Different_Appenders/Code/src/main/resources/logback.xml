@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- Console Appender: Logs messages to the standard console output -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!-- Pattern for console output: Timestamp, Thread name, Level, Logger name, Message, Newline -->
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- File Appender: Logs messages to a file, rotating daily -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- The name of the file to which messages will be logged -->
+        <file>logs/application.log</file>
+
+        <!-- Rolling policy: Defines when and how log files are rolled (e.g., daily) -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- Daily rollover: log file will be rolled over once per day -->
+            <fileNamePattern>logs/application.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!-- Keeping 30 days worth of history -->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <!-- Pattern for file output: Same as console for consistency -->
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Root logger configuration -->
+    <!-- Defines the default logging level and attaches appenders -->
+    <root level="info"> <!-- Set default logging level to INFO -->
+        <appender-ref ref="CONSOLE" /> <!-- Directs logs to the CONSOLE appender -->
+        <appender-ref ref="FILE" />    <!-- Directs logs to the FILE appender -->
+    </root>
+
+    <!-- Example of a specific logger configuration -->
+    <!-- We can set different levels or appenders for specific packages/classes -->
+    <logger name="com.yourname.slf4j3.specific" level="debug" additivity="false">
+        <appender-ref ref="CONSOLE" />
+    </logger>
+
+</configuration>

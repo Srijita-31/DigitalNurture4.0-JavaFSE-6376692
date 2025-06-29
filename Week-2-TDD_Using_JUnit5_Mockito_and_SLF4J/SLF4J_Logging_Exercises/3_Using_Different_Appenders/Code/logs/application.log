@@ -1,0 +1,6 @@
+20:29:26.790 [main] INFO  DifferentAppenderExample - This is an INFO message from the main logger.
+20:29:26.792 [main] WARN  DifferentAppenderExample - This is a WARNING message from the main logger.
+20:29:26.792 [main] ERROR DifferentAppenderExample - This is an ERROR message from the main logger.
+20:29:26.793 [main] ERROR DifferentAppenderExample - An arithmetic error occurred: / by zero
+java.lang.ArithmeticException: / by zero
+	at DifferentAppenderExample.main(DifferentAppenderExample.java:32)
