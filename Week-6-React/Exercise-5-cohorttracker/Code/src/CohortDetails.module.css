@@ -1,0 +1,25 @@
+.box {
+  width: 300px;
+  display: inline-block;
+  margin: 10px; /* Overall 10px margin */
+  padding-top: 10px; /* Top and bottom padding */
+  padding-bottom: 10px;
+  padding-left: 20px; /* Left and right padding */
+  padding-right: 20px;
+  border: 1px solid black; /* 1px border */
+  border-radius: 10px; /* A border radius of 10px */
+}
+
+.ongoing {
+  color: green;
+  font-weight: 800; /* As per your previous instructions for <h3> */
+}
+
+.other {
+  color: blue;
+  font-weight: 800; /* As per your previous instructions for <h3> */
+}
+
+dt {
+  font-weight: 500; /* Style for <dt> element */
+}
