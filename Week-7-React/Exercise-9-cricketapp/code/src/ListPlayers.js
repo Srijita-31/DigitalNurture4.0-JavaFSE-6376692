@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ListPlayers = () => {
-    // Array of 11 players and their scores
+
     const players = [
         { name: 'Mr.Jack', score: 50 },
         { name: 'Mr.Michael', score: 70 },
@@ -16,7 +16,7 @@ const ListPlayers = () => {
         { name: 'Mr.Rohit', score: 80 },
     ];
 
-    // Filter players with scores less than or equal to 70
+    
     const playersBelow70 = players.filter(player => player.score <= 70);
 
     return (
