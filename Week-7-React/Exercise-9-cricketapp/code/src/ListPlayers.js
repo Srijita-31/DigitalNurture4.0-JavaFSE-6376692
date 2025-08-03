@@ -1,0 +1,45 @@
+import React from 'react';
+
+const ListPlayers = () => {
+    // Array of 11 players and their scores
+    const players = [
+        { name: 'Mr.Jack', score: 50 },
+        { name: 'Mr.Michael', score: 70 },
+        { name: 'Mr.John', score: 40 },
+        { name: 'Mr.Ann', score: 61 },
+        { name: 'Ms.Elisabeth', score: 61 },
+        { name: 'Mr.Sachin', score: 95 },
+        { name: 'Mr.Dhoni', score: 100 },
+        { name: 'Mr.Virat', score: 84 },
+        { name: 'Mr.Jadeja', score: 64 },
+        { name: 'Mr.Raina', score: 75 },
+        { name: 'Mr.Rohit', score: 80 },
+    ];
+
+    // Filter players with scores less than or equal to 70
+    const playersBelow70 = players.filter(player => player.score <= 70);
+
+    return (
+        <div>
+            <h2>List of Players</h2>
+            <ul>
+                {players.map((item, index) => (
+                    <li key={index}>
+                        <span>{item.name} {item.score}</span>
+                    </li>
+                ))}
+            </ul>
+
+            <h2>List of Players having Scores Less than 70</h2>
+            <ul>
+                {playersBelow70.map((item, index) => (
+                    <li key={index}>
+                        <span>{item.name} {item.score}</span>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
+};
+
+export default ListPlayers;

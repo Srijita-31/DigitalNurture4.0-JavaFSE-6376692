@@ -1,0 +1,35 @@
+/* src/App.css */
+
+.App {
+  text-align: left;
+  font-family: Arial, sans-serif;
+  margin: 40px; /* Increased margin to give more space around the content */
+}
+
+/* Style for the main <h1> heading */
+.App h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Style for the <h2> subheadings */
+.App h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 30px; /* Added more space above the heading */
+  margin-bottom: 15px; /* Added space between heading and list */
+}
+
+/* Style for the unordered lists */
+.App ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding: 0;
+}
+
+/* Style for the list items */
+.App li {
+  font-size: 18px;
+  margin-bottom: 8px; /* Added a little more space between list items */
+}
